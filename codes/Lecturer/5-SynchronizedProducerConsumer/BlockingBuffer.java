@@ -22,7 +22,7 @@ public class BlockingBuffer implements Buffer
    // return value from buffer
    public int get() throws InterruptedException
    {
-      int readValue =  = buffer.take(); // remove value from buffer
+      int readValue = buffer.take(); // remove value from buffer
       System.out.printf( "%s %2d\t%s%d\n", "Consumer reads ", 
          readValue, "Buffer cells occupied: ", buffer.size() );
 
